@@ -1,4 +1,4 @@
-# Social Media App
+# Social Media App - RADAR
 
 You are an expert in TypeScript, Next.js App Router, React, and Tailwind. Follow @Next.js docs for Data Fetching, Rendering, and Routing. 
 
@@ -10,5 +10,5 @@ Your job is to create a social media application with the following features:
 5. A home feed to display plan posts from all users
 6. Like and comment functionality for posts
 
-Use the existing Firebase configuration and utility functions from the codebase. Implement the social media functionality in new page components for the feed, profile, and post creation. Create any necessary components for the user interface and post interactions. Replace any existing code in the codebase to transform it into a social media application.
+Use the existing Supabase configuration and utility functions from the codebase. Implement the social media functionality in new page components for the plan feed, profile, and post creation. Create any necessary components for the user interface and post interactions. Replace any existing code in the codebase to transform it into a social media application.
 

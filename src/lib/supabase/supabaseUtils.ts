@@ -1,4 +1,3 @@
-
 import { supabase } from "./supabase";
 
 // Auth functions
@@ -53,17 +52,25 @@ export const deleteDocument = async (tableName: string, id: string) => {
 };
 
 // Storage functions
-export const uploadFile = async (file: File, path: string) => {
-  const { data, error } = await supabase
-    .storage
-    .from('your-bucket-name')
-    .upload(path, file);
-  if (error) throw error;
-  
-  const { data: { publicUrl } } = supabase
-    .storage
-    .from('your-bucket-name')
-    .getPublicUrl(path);
-    
-  return publicUrl;
+export const uploadFile = async (file: File): Promise<string | null> => {
+  const { data, error } = await supabase.storage
+    .from('images') // Ensure you have a bucket named 'images'
+    .upload(`public/${file.name}`, file);
+
+  if (error) {
+    console.error("Error uploading file:", error);
+    return null;
+  }
+
+  // Get the public URL of the uploaded file
+  const { publicURL, error: urlError } = supabase.storage
+    .from('images')
+    .getPublicUrl(data.path);
+
+  if (urlError) {
+    console.error("Error getting public URL:", urlError);
+    return null;
+  }
+
+  return publicURL;
 };
