@@ -4,6 +4,7 @@
 import React, { createContext, useEffect, useState } from "react";
 import { User } from '@supabase/supabase-js';
 import { supabase } from "../supabase/supabase";
+// Using only Supabase for authentication now
 
 interface AuthContextType {
   user: User | null;
