@@ -1,0 +1,91 @@
+(recovery mode) /home/runner/workspace$ git --version
+git version 2.25.1
+(recovery mode) /home/runner/workspace$ ^C
+(recovery mode) /home/runner/workspace$ git init
+Reinitialized existing Git repository in /home/runner/workspace/.git/
+(recovery mode) /home/runner/workspace$ git remote add origin https://github.com/LBRdevelopments/RADARV1-REPLIT-REPOSITORY.git
+fatal: remote origin already exists.
+(recovery mode) /home/runner/workspace$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    deleted:    .replit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    replit.nix
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(recovery mode) /home/runner/workspace$ ^C
+(recovery mode) /home/runner/workspace$ git add replit.nix .replit
+(recovery mode) /home/runner/workspace$ git commit -m "Initial commit from Replit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'runner@6efbaf442a17.(none)')
+(recovery mode) /home/runner/workspace$ git config --global user.name "Laurens"
+fatal: $HOME not set
+(recovery mode) /home/runner/workspace$ git config --global user.email "rbl.developments@gmail.com"
+fatal: $HOME not set
+(recovery mode) /home/runner/workspace$ git config user.name "Laurens"
+(recovery mode) /home/runner/workspace$ git config user.email "rbl.developments@gmail.com"
+(recovery mode) /home/runner/workspace$ git commit -m "Initial commit from Replit"
+[main 29ee986] Initial commit from Replit
+ 2 files changed, 5 insertions(+), 17 deletions(-)
+ delete mode 100644 .replit
+ create mode 100644 replit.nix
+(recovery mode) /home/runner/workspace$ git push -u origin main
+Username for 'https://github.com': 
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template/'
+(recovery mode) /home/runner/workspace$ 
+(recovery mode) /home/runner/workspace$ Username for 'https://github.com': LBRdevelopments
+bash: Username: command not found
+(recovery mode) /home/runner/workspace$ Password for 'https://github.com': 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git push -u origin main
+bash: Password: command not found
+(recovery mode) /home/runner/workspace$ 
+(recovery mode) /home/runner/workspace$ git push -u origin main
+Username for 'https://github.com': LBRdevelopments
+Password for 'https://LBRdevelopments@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template/'
+(recovery mode) /home/runner/workspace$ git config --global credential.helper store
+fatal: $HOME not set
+(recovery mode) /home/runner/workspace$ git config --global credential.helper store
+fatal: $HOME not set
+(recovery mode) /home/runner/workspace$ git push -u origin main
+Username for 'https://github.com': LBRdevelopments
+Password for 'https://LBRdevelopments@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template/'
+(recovery mode) /home/runner/workspace$ git config --global credential.helper store
+fatal: $HOME not set
+(recovery mode) /home/runner/workspace$ git push -u origin main
+Username for 'https://github.com': LBRdevelopments
+Password for 'https://LBRdevelo
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template/'
+(recovery mode) /home/runner/workspace$ git push -u origin main
+Username for 'https://github.com': LBRdevelopments
+Password for 'https://LBRdevelopments@github.com': 
+remote: Permission to LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template.git denied to LBRdevelopments.
+fatal: unable to access 'https://github.com/LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template/': The requested URL returned error: 403
+(recovery mode) /home/runner/workspace$ git push -u origin main
+Username for 'https://github.com': LBRdevelopments
+Password for 'https://LBRdevelopments@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/LBRdevelopments/RADARV1-Full-Stack-Nextjs-Using-Template/'
+(recovery mode) /home/runner/workspace$ 
