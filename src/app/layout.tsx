@@ -1,5 +1,3 @@
-"use client"; // Ensure this is present if using hooks
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
