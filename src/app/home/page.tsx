@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 import { getDocuments } from '@/lib/supabase/supabaseUtils';
 import PlanFeed from '@/app/components/PlanFeed';

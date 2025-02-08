@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '@/lib/contexts/AuthContext';
+import SignInWithGoogle from '@/components/SignInWithGoogle';
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
@@ -13,7 +14,10 @@ const Profile = () => {
           {/* Add more user profile details here */}
         </div>
       ) : (
-        <p>Please log in to view your profile.</p>
+        <div className="mt-4">
+          <p>Please log in to view your profile.</p>
+          <SignInWithGoogle />
+        </div>
       )}
     </div>
   );
