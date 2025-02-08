@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getDocuments } from '@/lib/supabase/supabaseUtils';
+import PlanFeed from '@/app/components/PlanFeed';
 
 const HomeFeed = () => {
   const [posts, setPosts] = useState([]);
@@ -15,6 +16,7 @@ const HomeFeed = () => {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold">Home Feed</h1>
+      <PlanFeed />
       <div className="mt-4">
         {posts.map(post => (
           <div key={post.id} className="border p-4 mb-4 rounded-lg">
