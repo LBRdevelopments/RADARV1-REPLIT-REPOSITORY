@@ -1,5 +1,5 @@
 { pkgs }:
 
 pkgs.mkShell rec {
-  buildInputs = [ pkgs.git ];
+  buildInputs = [ pkgs.git pkgs.nodejs ];
 }

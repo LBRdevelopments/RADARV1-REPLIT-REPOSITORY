@@ -1,0 +1,15 @@
+modules = ["nodejs-20"]
+[workflows]
+runButton = "Start Next.js"
+
+[[workflows.workflow]]
+name = "Start Next.js"
+author = 39425667
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev -- -p 3000 -H 0.0.0.0"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
