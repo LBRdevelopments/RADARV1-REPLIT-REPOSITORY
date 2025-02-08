@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { addDocument } from '@/lib/supabase/supabaseUtils';
-import { uploadFile } from '@/lib/supabase/supabaseUtils'; // Import the uploadFile function
+import { addDocument, uploadFile } from '@/lib/supabase/supabaseUtils';
+import ImageUpload from '@/components/ImageUpload';
 
 const CreatePost = () => {
   const [title, setTitle] = useState('');
@@ -10,12 +10,11 @@ const CreatePost = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (image) {
-      const imageUrl = await uploadFile(image); // Use the uploadFile function
+      const imageUrl = await uploadFile(image);
       if (imageUrl) {
         await addDocument('posts', { title, content, imageUrl });
         // Redirect or show success message
       } else {
-        // Handle upload error
         console.error("Image upload failed.");
       }
     }
@@ -37,11 +36,7 @@ const CreatePost = () => {
         onChange={(e) => setContent(e.target.value)}
         className="border p-2 w-full mb-2"
       />
-      <input
-        type="file"
-        onChange={(e) => setImage(e.target.files?.[0] || null)}
-        className="mb-2"
-      />
+      <ImageUpload onImageChange={setImage} />
       <button type="submit" className="bg-blue-500 text-white p-2 rounded">
         Submit
       </button>

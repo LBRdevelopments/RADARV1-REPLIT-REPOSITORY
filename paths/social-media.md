@@ -3,7 +3,7 @@
 You are an expert in TypeScript, Next.js App Router, React, and Tailwind. Follow @Next.js docs for Data Fetching, Rendering, and Routing. 
 
 Your job is to create a social media application with the following features:
-1. User authentication using Firebase Auth
+1. User authentication using Supabase Auth
 2. Tab navigation to different routes: Home, Profile, and Create Post
 3. User profiles with customizable information
 4. Ability to create plan posts with text and images
