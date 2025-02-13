@@ -1,0 +1,45 @@
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.mapOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Optional overlay */
+}
+
+.planDot {
+  position: absolute;
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.personal {
+  background-color: #FF375F; /* Personal dot color */
+}
+
+.public {
+  background-color: #32D74B; /* Public dot color */
+}
+
+.selected {
+  transform: scale(1.5); /* Scale up when selected */
+}
+
+.dotLabel {
+  position: absolute;
+  bottom: 25px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} 

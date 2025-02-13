@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.footer {
+  margin-top: auto;
+} 
